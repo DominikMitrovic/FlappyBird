@@ -29,7 +29,8 @@ def makeHSTable(name, score):
 
     return scores
 
-
+#pickle - modul za import i export u fileove, mozda je problem sto ga ironpthon ne podrzava (ali onda ni skripta sama ne bi radila?)
+#skripta radi kad se pokrene sama s donjim parametrima
 #print(makeHSTable("genericName", 5))
 #raw_input()
        
