@@ -106,15 +106,16 @@ namespace FlappyBird
         {
             if (e.KeyCode == Keys.Enter)
             {
-                // tu je negdje problem, cini mi se da se skripta uopce ne pokrene ili ne primi parametre jer se ne napravi .dat file
-                ScriptSource script = pyEngine.CreateScriptSourceFromFile(@"C:\Users\Dominik\Documents\Visual Studio 2017\Projects\FlappyBird\IronPythonApplication1\HighScores.py");
+                ScriptSource script = pyEngine.CreateScriptSourceFromFile("HighScores.py");
                 script.Execute(pyScope);
                 dynamic addToHSTable = pyScope.GetVariable("makeHSTable");
+                lblHS.Visible = true;
 
-                
                 dynamic scores = addToHSTable(tbName.Text, playerBird.score);
-                // ^^^^^ nisam siguran kako primiti natrag listu ^^^^^^
-                //treba u formi dodat samo neki element gjde ce se ispisat to sto se primi iz skripte
+                for (int i=0; i < 10; i++)
+                {
+                    lblHS.Text += (i+1 +")" + scores[i] + "\n");
+                }
 
             }
             else

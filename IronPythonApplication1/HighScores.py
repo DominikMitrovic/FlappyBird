@@ -1,5 +1,5 @@
 import sys
-sys.path.append(r"C:\Program Files (x86)\Python27\Lib")
+sys.path.append(r"C:\Program Files (x86)\IronPython 2.7\Lib")
 import clr
 import os
 import pickle
@@ -9,8 +9,14 @@ from operator import itemgetter
 
 def makeHSTable(name, score):
     highScoresFilename = 'highScores.dat'
+    emptyTuple= None, 0
     scores = []
-    # checks if file to save scores exists, if not, creates one
+   
+   # To get empty list with zero scores in new .dat file
+    for x in range(10):
+        scores.append(emptyTuple)
+
+    # checks if file to save scores exists, if not, creates one filled with 0s
     if os.path.exists(highScoresFilename):
         with open(highScoresFilename,'rb') as rs: 
             scores = pickle.load(rs)
@@ -29,8 +35,9 @@ def makeHSTable(name, score):
 
     return scores
 
-#pickle - modul za import i export u fileove, mozda je problem sto ga ironpthon ne podrzava (ali onda ni skripta sama ne bi radila?)
-#skripta radi kad se pokrene sama s donjim parametrima
+#pickle - modul for import data into files and export from them)
+
+#FOR TESTING PURPOSES
 #print(makeHSTable("genericName", 5))
 #raw_input()
        

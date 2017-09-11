@@ -40,6 +40,7 @@
             this.pbGround = new System.Windows.Forms.PictureBox();
             this.tbName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
+            this.lblHS = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbBird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPipeDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPipeUp)).BeginInit();
@@ -148,6 +149,16 @@
             this.lblName.Text = "Enter your name:";
             this.lblName.Visible = false;
             // 
+            // lblHS
+            // 
+            this.lblHS.AutoSize = true;
+            this.lblHS.Location = new System.Drawing.Point(438, 164);
+            this.lblHS.Name = "lblHS";
+            this.lblHS.Size = new System.Drawing.Size(107, 34);
+            this.lblHS.TabIndex = 5;
+            this.lblHS.Text = "HIGH SCORES:\r\n \r\n";
+            this.lblHS.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -155,6 +166,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 633);
+            this.Controls.Add(this.lblHS);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.pbPipeUp);
@@ -190,6 +202,7 @@
         public System.Windows.Forms.Label lblScoreValue;
         public System.Windows.Forms.TextBox tbName;
         public System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblHS;
     }
 }
 
