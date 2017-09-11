@@ -15,7 +15,7 @@ using IronPython.Runtime;
 
 namespace FlappyBird
 {
-    public partial class Form1 : Form
+    public partial class FlappyBird : Form
     {
         Bird playerBird = new Bird();
         Pipe evilPipe = new Pipe();
@@ -25,7 +25,7 @@ namespace FlappyBird
         public ScriptScope pyScope = null;
         public ScriptSource pySource = null;
 
-        public Form1()
+        public FlappyBird()
         {
             InitializeComponent();
             DoubleBuffered = true;
@@ -67,6 +67,10 @@ namespace FlappyBird
             {
                 pbBird.Image = Image.FromFile(Application.StartupPath + "\\" + "frame2.png");
                 pbBird.Top -= playerBird.jump;
+            }
+            else if(e.KeyCode ==Keys.R)
+            {
+                Application.Restart();
             }
         }
 

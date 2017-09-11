@@ -1,6 +1,6 @@
 ﻿namespace FlappyBird
 {
-    partial class Form1
+    partial class FlappyBird
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlappyBird));
             this.pbBird = new System.Windows.Forms.PictureBox();
             this.pbPipeDown = new System.Windows.Forms.PictureBox();
             this.pbPipeUp = new System.Windows.Forms.PictureBox();
@@ -41,6 +41,7 @@
             this.tbName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.lblHS = new System.Windows.Forms.Label();
+            this.lblRestart = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbBird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPipeDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPipeUp)).BeginInit();
@@ -159,13 +160,24 @@
             this.lblHS.Text = "HIGH SCORES:\r\n \r\n";
             this.lblHS.Visible = false;
             // 
-            // Form1
+            // lblRestart
+            // 
+            this.lblRestart.AutoSize = true;
+            this.lblRestart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRestart.Location = new System.Drawing.Point(785, 9);
+            this.lblRestart.Name = "lblRestart";
+            this.lblRestart.Size = new System.Drawing.Size(185, 20);
+            this.lblRestart.TabIndex = 6;
+            this.lblRestart.Text = "Press key \"R\" to restart";
+            // 
+            // FlappyBird
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 633);
+            this.Controls.Add(this.lblRestart);
             this.Controls.Add(this.lblHS);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.tbName);
@@ -176,8 +188,8 @@
             this.Controls.Add(this.lblScoreValue);
             this.Controls.Add(this.pbPipeDown);
             this.Controls.Add(this.pbBird);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FlappyBird";
+            this.Text = "FlappyBird";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
@@ -203,6 +215,7 @@
         public System.Windows.Forms.TextBox tbName;
         public System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblHS;
+        private System.Windows.Forms.Label lblRestart;
     }
 }
 
