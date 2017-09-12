@@ -1,7 +1,7 @@
 # FlappyBird Application
 
 ## Introduction
-This simple game is a clone of "legendary" Flappy Bird mobile game. Application was written in C# (windows forms) and IronPython. The "game" part of the application is coded in C# and highscore table that is shown after the game finishes and player enters his/hers name is programmed in IronPython (extern script). IronPython module "Pickle" was used to easily export and import needed data to separate file. In current version there are no known bugs.
+This simple game is a clone of "legendary" Flappy Bird mobile game. Application was written in C# (windows forms) and IronPython. The "game" part of the application is coded in C#. Highscore table that is shown after the game finishes and player enters his/hers name is programmed in IronPython (extern script). IronPython module "Pickle" was used to easily import and export needed data to/from separate file. In current version there are no known bugs.
 
 ## Game Controls
 A player controls the bird with "space" key. After pressing the key, the bird jumps and therefore stays in the air. Don't let the bird touch obstacles!
