@@ -8,6 +8,11 @@ A player controls the bird with "space" key. After pressing the key, the bird ju
 With "R" key the player can restart the game.
 After finishing, user can enter his or hers name and make it to the highscore table!(if score is higher than other scores)
 
+## Possible improvements in future
+- Recreating a game in dedicated game engine in order to improve performance and making it easier to develop further
+- Making game harder as time passes, e.g. obstacles become faster, larger or bird moves slower and jumps less
+- Implementing online high score table, so players can compete with other players around the world
+
 ## Screen examples:
 
 ### -Start screen:
