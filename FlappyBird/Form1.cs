@@ -110,7 +110,7 @@ namespace FlappyBird
         {
             if (e.KeyCode == Keys.Enter)
             {
-                ScriptSource script = pyEngine.CreateScriptSourceFromFile("HighScores.py");
+                ScriptSource script = pyEngine.CreateScriptSourceFromFile("../../../IronPythonApplication1/HighScores.py");
                 script.Execute(pyScope);
                 dynamic addToHSTable = pyScope.GetVariable("makeHSTable");
                 lblHS.Visible = true;
