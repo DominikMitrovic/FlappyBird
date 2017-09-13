@@ -35,7 +35,7 @@ def makeHSTable(name, score):
 
     return scores
 
-#pickle - modul for import data into files and export from them)
+#pickle - module for importing data into files and exporting from them)
 
 #FOR TESTING PURPOSES
 #print(makeHSTable("genericName", 5))
